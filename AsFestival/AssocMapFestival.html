@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Andorra Association Pairs Event Map</title>
+    <style>
+      html, body, #map-canvas 
+      {
+        height: 100%;
+        padding: 0px;
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-top:10px;
+            background: #0F0F0F;
+      }
+
+		#map-canvas{
+            vertical-align: bottom;
+			width: 100%!important;
+            height:700px!important;
+			display:inline-block;
+            top: 0px;
+            overflow: scroll!important;
+            color:black;
+			
+		}
+			#map{
+            color:white;
+			display:inline-block;
+			top: 0px;
+			width: 100%!important;	
+			margin-bottom:10px;
+		}
+
+		path.slice{
+			stroke-width:2px;
+		}
+		#slider{
+				left: 5px;
+                margin-top:20px;
+			}
+		polyline{
+			opacity: .3;
+			stroke: white;
+			stroke-width: 2px;
+			fill: none;
+		}
+	.ui-slider-tick-mark{
+			display:inline-block;
+			width:2px;
+			background:white;
+            color:white;
+			height:16px;
+			position:absolute;
+			top:-16px;
+			text-indent: 5px;
+			font-size:8px;
+		}
+    </style>
+	    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+	 
+      <script src = "Association.js"></script>
+	  	  <script src="regions.json"></script>
+	  <script src="EventTouristPairs.json"></script>
+      <script src="EventFrancePairs.json"></script>
+      <script src="EventSpainPairs.json"></script>
+        
+  </head>
+  <body>
+	  <div id = "map">  
+
+
+
+<label id = "fr"><input type="radio" name = "data"id="FrenchBox" onclick="boxclick(this,'france')"checked />  French Tourists </label>
+<label id = "sp"><input type="radio" name = "data" id="SpanishBox" onclick="boxclick(this,'spain')" />  Spanish Tourists </label>
+<label id= "other"><input type="radio" name = "data" id="OtherBox" onclick="boxclick(this,'all')" />  Other Tourists </label> 
+ <div id="slider"> </div>
+   <div id="map-canvas">
+	  </div>        
+ 
+          </div>
+  </body>
+</html>

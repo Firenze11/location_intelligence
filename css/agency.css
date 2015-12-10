@@ -249,7 +249,16 @@ section h3.section-subheading{
 	margin-bottom:75px
 }
 @media (min-width:768px){
-	section{padding:150px 0}}.service-heading{margin:15px 0;text-transform:none
+	section{
+		padding:150px 0
+	}
+}
+.service-heading{
+	margin:15px 0;text-transform:none
+}
+.sep{
+	margin-top:30px;
+	margin-bottom:100px;
 }
 #prediction .portfolio-item{
 	margin:0 0 15px;right:0

@@ -104,7 +104,9 @@
                 <div class="col-lg-12">
                     <h2 class="section-heading">Overview</h2>
                     <p class="text-muted">
-                        Understanding the travel patterns is key to design personalized travel recommendation and to improve local tourism business. <br>             
+                        Understanding the mind of the customers is essential for a successful business. In fact, lots of IT companies have launched Location recommendation services based on a person's past behavioral patterns to predict where he/she could be next and what he/she may like. <br>
+                        <b>Similarly, understanding the travel patterns is key to design personalized travel recommendation and to improve local tourism business. </b> <br>  <br>  
+                        In particular, we are interested in how travel patterns differ in subpopulations of tourists, and thus predict a tourist's next location. <br>        
                         Thanks to the availability of <b>call detail records (CDR) data </b> during tourism seasons in 2014, we are able to analyze the <b>location-time series </b> of more than 20000 aanonymized cell phone users in Andorra, a counntry bordering Spain and France. <br> 
                         <b>Topics we are trying to explore are:</b>
                     </p>
@@ -114,7 +116,7 @@
                 <div class="col-sm-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-users fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Tourist Behaviors</h4>
                     <p class="text-muted">How travel patterns differ in different subpopulations of tourists and during different time of the year</p>
@@ -122,7 +124,7 @@
                 <div class="col-sm-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-location-arrow fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Route Prediction</h4>
                     <p class="text-muted">Whether it is possible to predict a tourist's future route choice based on their own or their group's travel history</p>
@@ -130,7 +132,7 @@
                 <div class="col-sm-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Location Recommendation</h4>
                     <p class="text-muted">Develop a better targeted tourist attraction recommendation system, based on potential places of interest for each traveler</p>
@@ -269,7 +271,10 @@
             <div class="row">
                 <div class="col-lg-12 ">
                     <h2 class="section-heading">Prediction</h2>
-                    <p class="text-muted">Click on one of the thumbnails to see interactive maps of predicted next locations</p>
+                    <p class="text-muted">
+                        We implemented random forrest algorithm ...<br>
+                        Click on one of the thumbnails to see interactive maps of predicted next locations
+                    </p>
                 </div>
             </div>
             <div class="row sep">
@@ -283,8 +288,10 @@
                         <img src="img/analysis/as2.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
+                        <h4>Association Map</h4>
+                        <p class="text-muted">
+                            If tourists who go to one place are also likely to go to another, then the two places are considered associated. We found out that <b>the city in the center is associated with almost all the other cities at various time perieds</b> , which means a recommendation of a hotel or restaurant near the centural city might be of interest to those who are currently visiting almost all other places.
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-4 col-sm-6 portfolio-item">
@@ -297,8 +304,8 @@
                         <img src="img/analysis/predsp.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>French Tourists</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>Spanish Tourists</h4>
+                        <p class="text-muted">Spanish toursts typically start from the city in the southwest. After that, many choose to go to the centural city, but many others depart for other cities as well. They tend to pay short visits to many cities instead of staying in one city for very long. Thus, recommending hotels or restaurants in the same city for them would make less sense since they would move on to other cities soon. </p>
                     </div>
                 </div>
                 <div class="col-sm-4 col-sm-6 portfolio-item">
@@ -311,8 +318,8 @@
                         <img src="img/analysis/predfr.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Spanish Tourists</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>French Tourists</h4>
+                        <p class="text-muted">Unlike spanish people who like to travel all around the country, French tourists usually stay in the same city for longer. Many of them concentrate in the city on the northeast, and would stay there for most of the time. Even if they leave the city for a while during the time, they are likely to go back shortly after. Thus, recommending places of interest in the same place would be more effective for French people.</p>
                     </div>
                 </div>
                 
